@@ -11,7 +11,7 @@ source:
   sha256: 602fa94bf7e1ef48458780f0c5d6cbcd1cbefa518df230f47d9e70a6da05a1e3
 
 build:
-  number: 0
+  number: 1
   # may need to later add "skip: True  # [win]" to disable Windows.
   skip: true  # [py<30]
   script: "{{ PYTHON }} -m pip install . -vv"
@@ -29,7 +29,7 @@ requirements:
   run:
     - python
     - numpy
-    - matplotlib
+    - matplotlib-base
     - corner
 
 test:
