@@ -1,6 +1,5 @@
-
 {% set name = "ultranest" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 602fa94bf7e1ef48458780f0c5d6cbcd1cbefa518df230f47d9e70a6da05a1e3
+  sha256: 3275155048ed0670d71cf3792519912a0cc956ea57f4f638229a1a6fab40fc4b
 
 build:
-  number: 1
+  number: 0
   # may need to later add "skip: True  # [win]" to disable Windows.
   skip: true  # [py<30]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -42,7 +41,7 @@ about:
   license: AGPL3
   license_family: GPL
   license_file: LICENSE
-  summary: 'Fit and compare complex models reliably and rapidly. Advanced Nested Sampling.'
+  summary: Fit and compare complex models reliably and rapidly. Advanced Nested Sampling.
 
   description: |
     When scientific models are compared to data, two tasks are important: 1) contraining the model parameters and 2) comparing the model to other models. Different techniques have been developed to explore model parameter spaces. This package implements a Monte Carlo technique called nested sampling.
