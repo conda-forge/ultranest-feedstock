@@ -39,7 +39,7 @@ test:
 
 about:
   home: https://johannesbuchner.github.io/UltraNest/
-  license: AGPL3
+  license:  AGPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
   summary: 'Fit and compare complex models reliably and rapidly. Advanced Nested Sampling.'
