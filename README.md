@@ -3,7 +3,7 @@ About ultranest
 
 Home: https://johannesbuchner.github.io/UltraNest/
 
-Package license: AGPL3
+Package license: AGPL-3.0-or-later
 
 Feedstock license: BSD 3-Clause
 
