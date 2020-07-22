@@ -5,7 +5,7 @@ Home: https://johannesbuchner.github.io/UltraNest/
 
 Package license: AGPL-3.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Fit and compare complex models reliably and rapidly. Advanced Nested Sampling.
 
