@@ -1,5 +1,5 @@
 {% set name = "ultranest" %}
-{% set version = "3.0.2" %}
+{% set version = "3.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a90f9950f45bcdf3de66b20732a708594ac012a5e8eedb52aae1674fb5fa3816
+  sha256: 76d9a4331bdd8dbd677ef7b90dd62071e86dda7972a66671c18c5672e6fedc67
 
 build:
   number: 0
@@ -25,16 +25,23 @@ requirements:
     - cython
     - numpy
     - pytest-runner
+    
   run:
     - python
     - numpy
     - matplotlib-base
     - corner
+    - six
+    - cython
+    - scipy
 
 test:
   # not sure here if we should run "python setup.py test"
   imports:
     - ultranest
+  requires:
+    - cython
+    - joblib
 
 about:
   home: https://johannesbuchner.github.io/UltraNest/
