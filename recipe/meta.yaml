@@ -41,7 +41,7 @@ test:
   requires:
     - cython
     - joblib
-  run:
+  commands:
     - pytest
 
 about:
