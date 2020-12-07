@@ -1,5 +1,5 @@
 {% set name = "ultranest" %}
-{% set version = "3.0.3" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 76d9a4331bdd8dbd677ef7b90dd62071e86dda7972a66671c18c5672e6fedc67
+  sha256: aab79b3e1220e99cbb88a0db5a0902c916a330282d576a7dce58dcc49461b129
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
     - cython
     - numpy
     - pytest-runner
-    
+
   run:
     - python
     - numpy
