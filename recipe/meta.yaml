@@ -45,6 +45,7 @@ test:
     - pytest
     - git
     - pytest-html
+    - pip
   commands:
     - pip install h5py
     - git clone --depth 1 --single-branch https://github.com/JohannesBuchner/UltraNest/
