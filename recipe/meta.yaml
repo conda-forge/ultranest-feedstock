@@ -43,7 +43,10 @@ test:
     - joblib
     - pytest
   commands:
-    - pytest
+    - env
+    - echo $SRC_DIR
+    - echo ${SRC_DIR}
+    - pytest $SRC_DIR
 
 about:
   home: https://johannesbuchner.github.io/UltraNest/
