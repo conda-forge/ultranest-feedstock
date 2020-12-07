@@ -42,11 +42,10 @@ test:
     - cython
     - joblib
     - pytest
+    - git
   commands:
-    - env
-    - echo $SRC_DIR
-    - echo ${SRC_DIR}
-    - pytest $SRC_DIR
+    - git clone --depth 1 --single-branch https://github.com/JohannesBuchner/UltraNest/
+    - pytest UltraNest
 
 about:
   home: https://johannesbuchner.github.io/UltraNest/
