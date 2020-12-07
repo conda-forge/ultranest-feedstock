@@ -39,6 +39,8 @@ requirements:
 test:
   imports:
     - ultranest
+  source_files:
+    - tests/*
   requires:
     - cython
     - joblib
@@ -46,11 +48,6 @@ test:
     - git
     - pytest-html
     - pip
-  commands:
-    - python -m pip install --upgrade pip
-    - pip install -U h5py
-    - git clone --depth 1 --single-branch https://github.com/JohannesBuchner/UltraNest/
-    - pytest UltraNest
 
 about:
   home: https://johannesbuchner.github.io/UltraNest/
