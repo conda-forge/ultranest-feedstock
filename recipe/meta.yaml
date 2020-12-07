@@ -43,6 +43,7 @@ test:
     - joblib
     - pytest
     - git
+    - pytest-html
   commands:
     - git clone --depth 1 --single-branch https://github.com/JohannesBuchner/UltraNest/
     - pytest UltraNest
