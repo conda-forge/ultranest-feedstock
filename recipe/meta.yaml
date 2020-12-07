@@ -36,12 +36,13 @@ requirements:
     - scipy
 
 test:
-  # not sure here if we should run "python setup.py test"
   imports:
     - ultranest
   requires:
     - cython
     - joblib
+  run:
+    - pytest
 
 about:
   home: https://johannesbuchner.github.io/UltraNest/
