@@ -36,12 +36,18 @@ requirements:
     - scipy
 
 test:
-  # not sure here if we should run "python setup.py test"
   imports:
     - ultranest
+  source_files:
+    - tests/*
   requires:
     - cython
+    - h5py
     - joblib
+    - pytest
+    - git
+    - pytest-html
+    - pip
 
 about:
   home: https://johannesbuchner.github.io/UltraNest/
