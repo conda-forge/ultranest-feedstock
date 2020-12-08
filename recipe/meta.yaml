@@ -34,7 +34,6 @@ requirements:
     - six
     - cython
     - scipy
-    - h5py
 
 test:
   imports:
@@ -43,6 +42,7 @@ test:
     - tests/*
   requires:
     - cython
+    - h5py
     - joblib
     - pytest
     - git
