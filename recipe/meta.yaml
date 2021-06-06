@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   # may need to later add "skip: True  # [win]" to disable Windows.
-  skip: true  # [py<36]
+  skip: true  # [py<30 or python_impl == "pypy"]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
