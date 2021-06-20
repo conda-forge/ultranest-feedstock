@@ -1,5 +1,5 @@
 {% set name = "ultranest" %}
-{% set version = "3.2.1" %}
+{% set version = "3.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 084514ef45cdc55122b663dab29bd2306a8d07b5253d6ad1acce0cb2c9843ae8
+  sha256: 0b536df170bab421d9fab0a7db6a414f2ecbd1ffe9bcd72f9f2d827391b374d7
 
 build:
   number: 0
