@@ -14,10 +14,7 @@ build:
   # may need to later add "skip: True  # [win]" to disable Windows.
   skip: true  # [py<30 or python_impl == "pypy"]
   script:
-    # cython creates some issues, so we should make sure we rebuild cleanly
-    # from https://stackoverflow.com/a/65696724/885650
-    # and discussed in https://github.com/conda-forge/ultranest-feedstock/pull/35
-    - {{ PYTHON }} -m pip install  --global-option build --global-option --force . -vv
+    - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
