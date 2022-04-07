@@ -1,5 +1,5 @@
 {% set name = "ultranest" %}
-{% set version = "3.3.3" %}
+{% set version = "3.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e66e90ec9e933364ad0dee48a84236186979c663b640d55fdfb758618fd06aa6
+  sha256: 1afded4122646a20abce54effdbf442a1a20891b302aeb4a75ac856b0c42a052
 
 build:
-  number: 1
+  number: 0
   # may need to later add "skip: True  # [win]" to disable Windows.
   skip: true  # [py<30 or python_impl == "pypy"]
   script: {{ PYTHON }} -m pip install . -vv
