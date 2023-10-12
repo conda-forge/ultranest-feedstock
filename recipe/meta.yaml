@@ -10,7 +10,7 @@ source:
   sha256: e565e66a6306227b1e3472ea9a6c516e3c32666e6a39c0812c5ab2befefa21e1
 
 build:
-  number: 0
+  number: 1
   # may need to later add "skip: True  # [win]" to disable Windows.
   skip: true  # [py<30 or python_impl == "pypy"]
   script: {{ PYTHON }} -m pip install . -vv
