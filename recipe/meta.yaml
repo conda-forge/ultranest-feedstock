@@ -37,6 +37,7 @@ requirements:
     - six
     - cython
     - scipy
+    - getdist
 
 test:
   imports:
