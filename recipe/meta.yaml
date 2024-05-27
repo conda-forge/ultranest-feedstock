@@ -1,5 +1,5 @@
 {% set name = "ultranest" %}
-{% set version = "4.2.0" %}
+{% set version = "4.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 008a194eda96d1c5ab6d3bc2982be7f820ef8dca0059683eb7dfd7ca676192cb
+  sha256: 5ee3ba5c4685f2b26d3c0916017983f1edc059a881fc29fd550f306cdd16ae4b
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
   build:
     # cython project, so need a compiler
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - cython
   host:
     - python
