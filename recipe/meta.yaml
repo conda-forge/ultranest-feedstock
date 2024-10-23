@@ -10,7 +10,7 @@ source:
   sha256: 008a194eda96d1c5ab6d3bc2982be7f820ef8dca0059683eb7dfd7ca676192cb
 
 build:
-  number: 0
+  number: 1
   # may need to later add "skip: True  # [win]" to disable Windows.
   script_env:
     - MPLBACKEND=agg
