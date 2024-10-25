@@ -22,17 +22,17 @@ requirements:
     # cython project, so need a compiler
     - {{ compiler('c') }}
     - cython
-    - numpy<2
+    - numpy
   host:
     - python
     - pip
     - cython
-    - numpy<2
+    - numpy
     - pytest-runner
 
   run:
     - python
-    - numpy<2
+    - numpy
     - matplotlib-base
     - corner
     - six
