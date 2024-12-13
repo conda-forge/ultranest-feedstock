@@ -53,6 +53,7 @@ test:
     - tests/*
   requires:
     - cython
+    - pandas
     - h5py
     - joblib
     - pytest
