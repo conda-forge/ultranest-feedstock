@@ -1,5 +1,5 @@
 {% set name = "ultranest" %}
-{% set version = "4.3.3" %}
+{% set version = "4.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bea7e32d1c5e4d984402b1e40fc48c2936513c2d37ed7cf4395a7b3edcbb03ec
+  sha256: dfebdc4b2bc0138238f65e8f957b70fe296cb094c895172f4a368e792a59b501
 
 build:
-  number: 1
+  number: 0
   # may need to later add "skip: True  # [win]" to disable Windows.
   script_env:
     - MPLBACKEND=agg
