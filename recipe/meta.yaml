@@ -10,7 +10,12 @@ source:
   sha256: 09c3a8cdc350ee8034ec709e8f65e20da3145a94425695973ae75f8ce4e5ef72
 
 build:
-  number: 0
+  number: 1
+  # The Cython extensions link only libc (verified: no libgcc_s/libstdc++ in
+  # NEEDED, max symbol version GLIBC_2.17), so the compiler's blanket libgcc
+  # run_export does not apply and needlessly excludes older hosts.
+  ignore_run_exports:
+    - libgcc
   # may need to later add "skip: True  # [win]" to disable Windows.
   script_env:
     - MPLBACKEND=agg
