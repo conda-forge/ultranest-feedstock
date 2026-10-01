@@ -10,7 +10,7 @@ source:
   sha256: 07f2205a41af8577d4560bfba3284dc3593b4f722f8d581cd9f13873a272d032
 
 build:
-  number: 0
+  number: 1
   # The Cython extensions link only libc (verified: no libgcc_s/libstdc++ in
   # NEEDED, max symbol version GLIBC_2.17), so the compiler's blanket libgcc
   # run_export does not apply and needlessly excludes older hosts.
