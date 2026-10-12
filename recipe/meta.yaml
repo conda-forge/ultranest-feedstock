@@ -28,6 +28,10 @@ requirements:
     - {{ stdlib("c") }}
     - cython
     - numpy
+    - torch
+    - torchinfo
+    - joblib
+    - tqdm
   host:
     - python
     - pip
@@ -45,6 +49,10 @@ requirements:
     - cython
     - scipy
     - getdist
+    - torch
+    - torchinfo
+    - joblib
+    - tqdm
 
 test:
   imports:
