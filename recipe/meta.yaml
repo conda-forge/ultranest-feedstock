@@ -33,7 +33,7 @@ requirements:
     - {{ stdlib("c") }}
     - cython
     - numpy
-    - pytorch
+    - pytorch-cpu
     - torchinfo
     - joblib
     - tqdm
@@ -54,7 +54,7 @@ requirements:
     - cython
     - scipy
     - getdist
-    - pytorch
+    - pytorch-cpu
     - torchinfo
     - joblib
     - tqdm
