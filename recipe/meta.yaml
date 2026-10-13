@@ -1,5 +1,5 @@
 {% set name = "ultranest" %}
-{% set version = "4.6.2" %}
+{% set version = "4.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 057c19ff0f9bc0ebe56f3ca1d8cb1a78ff2acd8302cb2e6ca52993ef124f4fd9
+  sha256: 7d8fe3440b4e86c37f02dce9f8532fa1100522d9628626b69d9ca9d5239784f8
 
 build:
   number: 0
