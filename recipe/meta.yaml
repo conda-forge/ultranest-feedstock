@@ -1,5 +1,5 @@
 {% set name = "ultranest" %}
-{% set version = "4.5.2" %}
+{% set version = "4.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 07f2205a41af8577d4560bfba3284dc3593b4f722f8d581cd9f13873a272d032
+  sha256: 7d8fe3440b4e86c37f02dce9f8532fa1100522d9628626b69d9ca9d5239784f8
 
 build:
-  number: 1
+  number: 0
   # The Cython extensions link only libc (verified: no libgcc_s/libstdc++ in
   # NEEDED, max symbol version GLIBC_2.17), so the compiler's blanket libgcc
   # run_export does not apply and needlessly excludes older hosts.
