@@ -19,7 +19,7 @@ build:
   # may need to later add "skip: True  # [win]" to disable Windows.
   script_env:
     - MPLBACKEND=agg
-  skip: true  # [py<30 or python_impl == "pypy"]
+  skip: true  # [py<30 or py>=315 or python_impl == "pypy"]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -33,10 +33,6 @@ requirements:
     - {{ stdlib("c") }}
     - cython
     - numpy
-    - pytorch
-    - torchinfo
-    - joblib
-    - tqdm
   host:
     - python
     - pip
@@ -54,10 +50,6 @@ requirements:
     - cython
     - scipy
     - getdist
-    - pytorch
-    - torchinfo
-    - joblib
-    - tqdm
 
 test:
   imports:
@@ -73,6 +65,10 @@ test:
     - git
     - pytest-html
     - pip
+    - pytorch
+    - torchinfo
+    - joblib
+    - tqdm
 
 about:
   home: https://johannesbuchner.github.io/UltraNest/
